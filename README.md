@@ -1,4 +1,5 @@
 # stunning-octo-funicular
+a simple and fun game in c language
 genrate a random number
 the user has to guess it
 if the user guesses higher number than the random number,program shows lower number please
