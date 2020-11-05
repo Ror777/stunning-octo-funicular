@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+    int age, guess, nguess=1;
+    srand(time(0));
+    age = rand() % 100 + 1;
+    printf("the number is %d \n", age);
+    do
+    {
+        printf("How old do you think am I ?\n");
+        scanf("%d", &guess);
+        if (guess > age)
+        {
+            printf("Not that old! \n");
+        }
+        else if (guess < age)
+        {
+            printf("awww try again \n");
+        }
+        else
+        {
+            printf("You guessed it correct in %d attempts \n", nguess);
+        }
+        nguess++;
+    } while (guess != age);
+    return 0;
+}
