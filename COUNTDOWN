@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("start from seconds-- \n");
+    scanf("%d", &a);
+    while (a)
+    {
+
+        printf("%d seconds are left \n",a);
+        a--;
+        
+   }
+    
+    return 0;
+}
